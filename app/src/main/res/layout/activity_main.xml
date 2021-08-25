@@ -10,7 +10,7 @@
         android:id="@+id/meme"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/shareButton"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -19,6 +19,15 @@
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
 
+<!--    <ProgressBar-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toTopOf="@id/meme"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/meme"-->
+<!--        app:layout_constraintRight_toRightOf="@id/meme"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/meme"-->
+<!--        />-->
+
     <Button
         android:id="@+id/shareButton"
         android:layout_width="0dp"
@@ -26,6 +35,7 @@
         android:padding="32dp"
         android:text="Share"
         android:onClick="shareMeme"
+        android:background="@color/shareButtonColor"
         app:layout_constraintRight_toLeftOf="@id/guideline2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
@@ -36,6 +46,7 @@
         android:layout_height="wrap_content"
         android:padding="32dp"
         android:text="Next"
+        android:background="@color/nextButtonColor"
         android:onClick="nextMeme"
         app:layout_constraintLeft_toRightOf="@id/guideline2"
         app:layout_constraintBottom_toBottomOf="parent"
